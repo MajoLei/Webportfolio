@@ -1,0 +1,57 @@
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Satoshi', sans-serif;
+}
+
+.navContainer{
+    width: 100vw;
+    height: 100vh;
+    background-color: WhiteSmoke;
+    color:SlateGrey;
+    padding: 2em;
+}
+
+.menu
+{ display:flex;
+width: 50%;
+justify-content: space-around;
+}
+
+.menu li {
+    list-style: none;
+}
+.menu a
+{ color: black;
+    text-decoration: none;}
+    
+    .logo span{
+        color: black;   }
+
+    .logo {
+        margin-top: -7px;
+    }
+
+    .menu a:hover {
+        background-color:WhiteSmoke ;
+        color: burlywood;
+    }
+
+.navBar {display: flex ;
+        justify-content: space-between;
+    }
+
+.main { margin:0 auto;
+width: 50vw;
+height: 80vh;
+display: grid;
+align-items: center;
+grid-template-columns: repeat( 2,1fr);
+i
+}
