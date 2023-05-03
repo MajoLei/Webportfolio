@@ -1,22 +1,48 @@
 
-
 *{
     margin:0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Satoshi', sans-serif;
+html{
+    height: 100%;
 }
+ body {
+    font-family: 'Satoshi', sans-serif;
+    background-color: WhiteSmoke ;
+    overflow-y: scroll;
+}
+
 
 .navContainer{
     width: 100vw;
     height: 100vh;
     background-color: WhiteSmoke;
-    color:SlateGrey;
+    color:black;
     padding: 2em;
 }
+
+
+/* .infoPerfil:hover { */
+  
+    /* background-color: bisque; */
+
+
+    h1{
+    font-size: 60px;
+    color: rgb(74, 21, 21);}
+
+
+    h1 span {
+       color: brown;
+       /* font-style: agragar bold de la fuente */
+    }
+
+    .infoPerfil {
+        background-color: rgba(245, 245, 245, 0.387)
+        
+    }
 
 .menu
 { display:flex;
@@ -26,32 +52,227 @@ justify-content: space-around;
 
 .menu li {
     list-style: none;
+    
 }
 .menu a
 { color: black;
-    text-decoration: none;}
+    text-decoration: none;
+    
+}
     
     .logo span{
-        color: black;   }
-
-    .logo {
-        margin-top: -7px;
-    }
+        color: black; 
+        font-size: xx-large;
+   }
+    
+    .logo h2 {
+      color: brown; 
+      font-size:xx-large;
+     }
 
     .menu a:hover {
-        background-color:WhiteSmoke ;
-        color: burlywood;
+        background-color: whitesmoke;
+        color: brown;
+        
     }
 
-.navBar {display: flex ;
+.navBar {
+        display: flex;
         justify-content: space-between;
+        align-items: center;
+      
     }
 
 .main { margin:0 auto;
-width: 50vw;
-height: 80vh;
+width: 50%;
+height: 80%;
 display: grid;
 align-items: center;
-grid-template-columns: repeat( 2,1fr);
-i
-}
+grid-template-columns: repeat( 3,2fr);
+    background-image: url(img/RetratoArtista.jpeg);
+    background-size: auto 100% ;
+    background-repeat:no-repeat;
+    background-position: 90%;
+    width: 60%;
+    height: 100%;
+  }
+
+/* CambiosdeAboutMe */
+
+  .containerFondo {
+    background-image: url(img/bao-brush.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    text-align: left;
+    }
+
+    .Biografia {
+        color: #000000;
+        text-align: left; 
+    
+    }
+
+     main h1{
+        border: 2em;
+        padding: 1em;
+        font-size: 200%;
+        text-align: left;
+     }
+ */
+/* CambiosdePortolio */
+
+.Galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Para añadir espacio entre las imágenes */
+  }
+  
+  .imgGaleria {
+    flex-basis: calc(50% - 10px);
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+  
+  .imgGaleria img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* CambiosdeCONTACTO*/
+
+
+    h2 {
+        color: brown;
+    }
+  
+
+
+  .container {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    }
+
+
+  form {
+    background-color: #f1d4ad;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    margin-top: 0% auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);}
+
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: flex;
+    margin-bottom: 5px;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  button[type="submit"] {
+    background-color: #6c5147;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #794109;
+  }
+ footer { 
+    color: #b9aea1;
+    font-size: xx-small;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #4b3e1713;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;}
+    
+
+    
+
+
+     @media screen and (max-width:1440px) {
+        .infoPerfil {
+            background-color: rgba(255, 255, 255, 0.5) ;
+            color: #000000;
+        }
+
+     }
+
+  
+     @media screen and (max-width: 498px) {
+      .navBar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .menu {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+      
+      }
+      .menu li {
+        width: 100%;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+
+     .h2 {text-align: center;
+
+     }
+     form{
+      margin-top: 90px;
+     
+    }
+
+        
+        
+        
+    
+/* @media only screen and (max-width: 800px) {
+	header {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	
+	nav {
+		margin-top: 20px;
+	}
+	
+	main {
+		margin: 20px 0;
+	} */
+      
